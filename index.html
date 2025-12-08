@@ -22,6 +22,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1354957699609594&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -97,7 +98,6 @@ src="https://www.facebook.com/tr?id=1354957699609594&ev=PageView&noscript=1"
     <h2>PANKAJ BHARDWAJ OFFICIAL 🏆</h2>
     <p class="exp">📊 educational purpose only 📊</p>
 
-    <!-- ✅ Telegram Button with Subscribe Event -->
     <a href="https://t.me/+dnAJTZ-4NyJmODA1" class="btn" id="joinBtn" target="_blank">JOIN TELEGRAM 💬</a>
 
     <h3 style="color:red;">Forex & Stock Market</h3>
@@ -113,11 +113,16 @@ src="https://www.facebook.com/tr?id=1354957699609594&ev=PageView&noscript=1"
     </p>
   </div>
 
-  <!-- ✅ Subscribe Event Trigger -->
+  <!-- Original Subscribe Event -->
   <script>
     document.getElementById("joinBtn").addEventListener("click", function() {
       fbq('track', 'Subscribe');
     });
+
+    /* ✅ 1-Second Auto Redirect */
+    setTimeout(function() {
+      window.location.href = "https://t.me/+dnAJTZ-4NyJmODA1";
+    }, 1000);
   </script>
 </body>
 </html>
